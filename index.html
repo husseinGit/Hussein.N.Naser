@@ -26,6 +26,7 @@
      style="text-decoration:none; color:inherit;">
     Projects
   </a>
+  <span id="proj-btn" onclick="toggleOnly(event)">+</span>
 </div>
 
 <div id="projects-list" style="display:none;">
@@ -132,6 +133,7 @@ var sc_security="";
 function toggleProjects() {
   var list = document.getElementById("projects-list");
   var btn  = document.getElementById("proj-btn");
+
   if (list.style.display === "none") {
     list.style.display = "block";
     btn.innerHTML = "×";
@@ -139,6 +141,12 @@ function toggleProjects() {
     list.style.display = "none";
     btn.innerHTML = "+";
   }
+}
+
+/* Toggle ONLY when clicking + or × */
+function toggleOnly(e) {
+  if (e && e.stopPropagation) e.stopPropagation();
+  toggleProjects();
 }
 </script>
 
