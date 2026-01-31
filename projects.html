@@ -20,11 +20,13 @@
 <div class="menu-item"><a href="education.html">Education</a></div>
 <div class="menu-category">Research</div>
 <div class="menu-item"><a href="publications.html">Publications</a></div>
+  
 <div class="menu-category project-toggle">
   <a href="projects.html" onclick="toggleProjects()"
      style="text-decoration:none; color:inherit;">
     Projects
   </a>
+  <span id="proj-btn" onclick="toggleOnly(event)">+</span>
 </div>
 
 <div id="projects-list" style="display:none;">
@@ -35,6 +37,7 @@
   <div class="menu-item"><a href="project5.html">Project 5</a></div>
   <div class="menu-item"><a href="project6.html">Project 6</a></div>
 </div>
+
 
 <!---<div class="menu-item"><a href="research_group.html">Research&nbsp;Group</a></div>--->
 <div class="menu-category">Teaching</div>
@@ -131,6 +134,7 @@ var sc_security="";
 function toggleProjects() {
   var list = document.getElementById("projects-list");
   var btn  = document.getElementById("proj-btn");
+
   if (list.style.display === "none") {
     list.style.display = "block";
     btn.innerHTML = "×";
@@ -139,7 +143,14 @@ function toggleProjects() {
     btn.innerHTML = "+";
   }
 }
+
+/* Toggle ONLY when clicking + or × */
+function toggleOnly(e) {
+  if (e && e.stopPropagation) e.stopPropagation();
+  toggleProjects();
+}
 </script>
+
 
 
 <script type="text/javascript"
