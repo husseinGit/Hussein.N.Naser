@@ -49,8 +49,6 @@
 <div class="menu-item"><a href="awards.html">Awards&nbsp;and&nbsp;Honours</a></div>
 <div class="menu-category">Miscellaneous</div>
 <div class="menu-item"><a href="https://www.linkedin.com/in/hussein-naser-79b8baa3/?fbclid=IwAR3J8wGSlp1QmNZV_0siAvtSzPsvPPl7FMtz3qw2jtfPAo8ahthw4Pt3Gto">Linkedin</a></div>
-<!---<div class="menu-item"><a href="https://www.linkedin.com/in/ali-mohamed-ali-b10342b5/?fbclid=IwAR3J8wGSlp1QmNZV_0siAvtSzPsvPPl7FMtz3qw2jtfPAo8ahthw4Pt3Gto">Linkedin</a></div>--->
-<!---<div class="menu-item"><a href="https://scholar.google.com.hk/citations?user=UYmEdFUAAAAJ&hl=en&fbclid=IwAR2Mt_YR2MP371zEbqDZND7jRCuTx0wlClsA-WViH_zGWoghgkcKejF3rVc"> Google scholar1</a></div>--->
 <div class="menu-item"><a href="  https://scholar.google.com.hk/citations?user=UYmEdFUAAAAJ&hl=en"> Google scholar</a></div>
 <div class="menu-item"><a href="https://www.researchgate.net/profile/Hussein-Naser-6"> ResearchGate</a></div>
 <div class="menu-item"><a href="https://www.webofscience.com/wos/author/record/AFS-3001-2022">Web of Science</a></div>
@@ -121,6 +119,19 @@ function toggleOnly(e) {
   toggleProjects();
 }
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('a[href^="http"]');
+
+    links.forEach(link => {
+        if (link.hostname !== window.location.hostname) {
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+        }
+    });
+});
+</script>  
 
 <div id="footer">
 <div id="footer-text">
