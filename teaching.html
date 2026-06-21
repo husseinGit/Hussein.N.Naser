@@ -91,6 +91,19 @@ function toggleOnly(e) {
 }
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('a[href^="http"]');
+
+    links.forEach(link => {
+        if (link.hostname !== window.location.hostname) {
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+        }
+    });
+});
+</script>  
+
 <h1>Teaching</h1>
   
 <h2>Carleton University Teaching (Assistant)</h2>
