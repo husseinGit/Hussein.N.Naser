@@ -50,7 +50,6 @@
 <div class="menu-item"><a href="awards.html">Awards&nbsp;and&nbsp;Honours</a></div>
 <div class="menu-category">Miscellaneous</div>
 <div class="menu-item"><a href="https://www.linkedin.com/in/hussein-naser-79b8baa3/?fbclid=IwAR3J8wGSlp1QmNZV_0siAvtSzPsvPPl7FMtz3qw2jtfPAo8ahthw4Pt3Gto">Linkedin</a></div>
-<!---<div class="menu-item"><a href="https://www.linkedin.com/in/ali-mohamed-ali-b10342b5/?fbclid=IwAR3J8wGSlp1QmNZV_0siAvtSzPsvPPl7FMtz3qw2jtfPAo8ahthw4Pt3Gto">Linkedin</a></div>--->
 <!---<div class="menu-item"><a href="https://scholar.google.com.hk/citations?user=UYmEdFUAAAAJ&hl=en&fbclid=IwAR2Mt_YR2MP371zEbqDZND7jRCuTx0wlClsA-WViH_zGWoghgkcKejF3rVc"> Google scholar1</a></div>--->
 <div class="menu-item"><a href="  https://scholar.google.com.hk/citations?user=UYmEdFUAAAAJ&hl=en"> Google scholar</a></div>
 <div class="menu-item"><a href="https://www.researchgate.net/profile/Hussein-Naser-6">ResearchGate</a></div>
@@ -140,36 +139,18 @@ function toggleOnly(e) {
 }
 </script>
 
-<!--
-<script type="text/javascript">
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('a[href^="http"]');
 
-var sc_project=277873; 
-
-var sc_invisible=1; 
-
-var sc_security=""; 
-
-</script> 
-
-<script type="text/javascript"
-
-src="https://www.statcounter.com/counter/counter.js"
-
-async></script>
-
-<noscript><div class="statcounter"><a title="Web Analytics"
-
-href="https://statcounter.com/" target="_blank"><img
-
-class="statcounter"
-
-src="https://c.statcounter.com/277873/0//1/" alt="Web
-
-Analytics" 
-  
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-
-<!-- End of Statcounter Code -->
+    links.forEach(link => {
+        if (link.hostname !== window.location.hostname) {
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+        }
+    });
+});
+</script>  
 
 <div id="footer">
 <div id="footer-text">
