@@ -90,6 +90,19 @@ function toggleOnly(e) {
   toggleProjects();
 }
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('a[href^="http"]');
+
+    links.forEach(link => {
+        if (link.hostname !== window.location.hostname) {
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+        }
+    });
+});
+</script>          
           
           <h2>Editorship (Reviewer)</h2>
           <ul>
