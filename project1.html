@@ -7,14 +7,26 @@
 <link rel="stylesheet" href="style.css" type="text/css" />
 <title></title>
       <style>
-        .video-container {
+        .video-container1 {
+            width: 800px;
+            height: 450px;
+            overflow: hidden;
+           margin: 0 auto;
+        }
+        .video-container1 video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+     <style>
+        .video-container2 {
             width: 460px;
             height: 450px;
             overflow: hidden;
            margin: 0 auto;
         }
-
-        .video-container video {
+        .video-container2 video {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -104,7 +116,7 @@ An adaptive robust control scheme was also developed to handle uncertainties in 
 </table>
 
 <h2>ROS & Gazebo Simulation</h2>
-<div class="video-container">
+<div class="video-container1">
     <video controls>
         <source src="Images/drone_proj/ros_gazibo_sim.mp4" type="video/mp4">
     </video>
@@ -120,7 +132,7 @@ An adaptive robust control scheme was also developed to handle uncertainties in 
 </div>
 
 <h2>MATLAB Simulation</h2>
-<div class="video-container">
+<div class="video-container2">
     <video controls>
         <source src="Images/drone_proj/simulation.mp4" type="video/mp4">
     </video>
