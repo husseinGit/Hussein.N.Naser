@@ -32,6 +32,16 @@
             object-fit: cover;
         }
     </style>
+     <style>
+.video-table {
+    margin: 0 auto;
+}
+
+.video-table td {
+    padding: 5px;
+    text-align: center;
+}
+</style>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -113,6 +123,30 @@ An adaptive robust control scheme was also developed to handle uncertainties in 
 <td><img src="Images/drone_proj/drones.jpg" width="400" height="200" /></td>
 <td><img src="Images/drone_proj/sbd.png" width="400" height="204" /></td>
 </tr>
+</table>
+
+<table class="video-table">
+    <tr>
+        <td>
+            <video width="400" height="225" controls>
+                <source src="Images/drone_proj/Experimental_setup.mp4" type="video/mp4">
+            </video>
+        </td>
+
+        <td>
+            <video width="400" height="225" controls>
+                <source src="Images/drone_proj/ros_gazibo_sim.mp4" type="video/mp4">
+            </video>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" style="text-align: center;">
+            <video width="400" height="225" controls>
+                <source src="Images/drone_proj/simulation.mp4" type="video/mp4">
+            </video>
+        </td>
+    </tr>
 </table>
 
 <h2>Experimental Setup</h2>
