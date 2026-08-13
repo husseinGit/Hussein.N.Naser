@@ -32,16 +32,38 @@
             object-fit: cover;
         }
     </style>
-     <style>
+
+<style>
 .video-table {
     margin: 0 auto;
 }
 
 .video-table td {
-    padding: 5px;
+    padding: 10px;
     text-align: center;
+    vertical-align: top;
+}
+
+.video-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Container for the third video */
+.video3-container {
+    width: 400px;
+    height: 225px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.video3-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 </style>
+
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -123,6 +145,42 @@ An adaptive robust control scheme was also developed to handle uncertainties in 
 <td><img src="Images/drone_proj/drones.jpg" width="400" height="200" /></td>
 <td><img src="Images/drone_proj/sbd.png" width="400" height="204" /></td>
 </tr>
+</table>
+
+<table class="video-table">
+    <tr>
+        <td>
+            <div class="video-title">Experimental Setup</div>
+
+            <video width="400" height="225" controls>
+                <source src="Images/drone_proj/Experimental_setup.mp4" type="video/mp4">
+            </video>
+        </td>
+
+        <td>
+            <div class="video-title">ROS & Gazebo Simulation</div>
+
+            <video width="400" height="225" controls>
+                <source src="Images/drone_proj/ros_gazibo_sim.mp4" type="video/mp4">
+            </video>
+        </td>
+    </tr>
+
+    <!-- Second row: third video -->
+    <tr>
+        <td colspan="2">
+
+            <div class="video-title">MATLAB Simulation</div>
+
+            <div class="video3-container">
+                <video controls>
+                    <source src="Images/drone_proj/simulation.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </td>
+    </tr>
+
 </table>
 
 <table class="video-table">
