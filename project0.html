@@ -98,7 +98,7 @@
 
 </script>
 
-<h1>Assistive Dual-UAV System for Human-Guided Cooperative Payload Transportation</h1>
+<h1>X650 Holybro Quadrotor: Indoor Autonomous Flight Platform Ongoing Project</h1>
   
 <p>
 <b>Description:</b><br />
@@ -154,6 +154,121 @@ An adaptive robust control scheme was also developed to handle uncertainties in 
     </tr>
 
 </table>
+
+<!-- X650 Holybro Quadrotor Project -->
+<section class="project">
+
+    <h2>X650 Holybro Quadrotor — Indoor Autonomous Flight Platform</h2>
+
+    <p><strong>Ongoing Project</strong></p>
+
+    <!-- Project Video -->
+    <div class="video-container">
+        <video controls>
+            <source src="Images/drone_proj/x650_indoor_flight.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <p class="video-caption">
+        X650 Holybro quadrotor during indoor flight testing using OptiTrack
+        motion capture, Raspberry Pi 5, ROS 2 Jazzy, Pixhawk 6X, and PX4
+        Offboard Control.
+    </p>
+
+    <p>
+        This project focuses on the development and integration of a
+        <strong>GPS-denied indoor flight platform</strong> based on the
+        <strong>Holybro X650 quadcopter</strong>, <strong>Pixhawk 6X</strong>,
+        and <strong>Raspberry Pi 5</strong>. The platform is being prepared
+        for advanced control, perception, and AI-based experiments using an
+        <strong>OptiTrack motion capture system</strong>.
+    </p>
+
+    <p>
+        The system integrates <strong>PX4 Autopilot</strong>,
+        <strong>ROS 2 Jazzy</strong>, <strong>Micro XRCE-DDS</strong>, and
+        <strong>VRPN</strong> to enable real-time motion-capture-based state
+        estimation and offboard control.
+    </p>
+
+    <h3>System Development</h3>
+
+    <ol>
+        <li>
+            <strong>Quadrotor Assembly:</strong>
+            Assembled and configured the Holybro X650 frame, motors, ESCs,
+            power system, and Pixhawk 6X flight controller.
+        </li>
+
+        <li>
+            <strong>ESC and Thrust Configuration:</strong>
+            Configured and calibrated the ESCs and propulsion system to
+            resolve the initial insufficient-thrust problem and achieve
+            reliable takeoff performance.
+        </li>
+
+        <li>
+            <strong>Companion Computer Integration:</strong>
+            Integrated a Raspberry Pi 5 running Ubuntu 24.04 with the
+            Pixhawk 6X through a physical serial connection.
+        </li>
+
+        <li>
+            <strong>OptiTrack Motion Capture Integration:</strong>
+            Integrated OptiTrack Motive with ROS 2 Jazzy using VRPN and
+            Micro XRCE-DDS to stream real-time position and orientation
+            measurements to the PX4 flight controller.
+        </li>
+
+        <li>
+            <strong>GPS-Denied State Estimation:</strong>
+            Configured PX4 EKF to fuse external vision/motion-capture
+            measurements for indoor position and attitude estimation.
+        </li>
+
+        <li>
+            <strong>Flight Controller Tuning:</strong>
+            Tuned the flight-control parameters and PID controllers to
+            achieve stable hovering and reliable indoor flight.
+        </li>
+
+        <li>
+            <strong>PX4 Offboard Control:</strong>
+            Implemented and tested Offboard Control Mode, allowing
+            external commands and trajectories to be generated through
+            ROS 2.
+        </li>
+
+        <li>
+            <strong>AI Vision-Based Control:</strong>
+            Preparing the platform for the integration of AI-based visual
+            perception and autonomous control.
+        </li>
+    </ol>
+
+    <h3>System Architecture</h3>
+
+    <p class="architecture">
+        OptiTrack Motive &rarr; VRPN &rarr; ROS 2 Jazzy &rarr;
+        Raspberry Pi 5 &rarr; Micro XRCE-DDS &rarr; Pixhawk 6X
+        &rarr; PX4 &rarr; X650 Quadrotor
+    </p>
+
+    <h3>Project Status</h3>
+
+    <ul class="project-status">
+        <li>Hardware assembled and tested</li>
+        <li>ESCs configured and propulsion system tested</li>
+        <li>Raspberry Pi 5 companion computer integrated</li>
+        <li>OptiTrack motion capture integrated</li>
+        <li>GPS-denied state estimation configured</li>
+        <li>Indoor flight and PID tuning completed</li>
+        <li>PX4 Offboard Control implemented</li>
+        <li><strong>AI vision-based control — Ongoing</strong></li>
+    </ul>
+
+</section>
 
 <script type="text/javascript">
 function toggleProjects() {
