@@ -6,64 +6,36 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="style.css" type="text/css" />
 <title></title>
-      <style>
-        .video-container1 {
-            width: 800px;
-            height: 450px;
-            overflow: hidden;
-           margin: 0 auto;
-        }
-        .video-container1 video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
-     <style>
-        .video-container2 {
-            width: 460px;
-            height: 450px;
-            overflow: hidden;
-           margin: 0 auto;
-        }
-        .video-container2 video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
+  <style>
+    .video-table {
+      margin: 0 auto;
+  }
 
-<style>
-.video-table {
-    margin: 0 auto;
-}
+  .video-table td {
+      padding: 10px;
+      text-align: center;
+      vertical-align: top;
+  }
 
-.video-table td {
-    padding: 10px;
-    text-align: center;
-    vertical-align: top;
-}
+  .video-title {
+      font-weight: bold;
+      margin-bottom: 8px;
+  }
 
-.video-title {
-    font-weight: bold;
-    margin-bottom: 8px;
-}
+  /* Container for the third video */
+  .video3-container {
+      width: 250px;
+      height: 225px;
+      overflow: hidden;
+      margin: 0 auto;
+  }
 
-/* Container for the third video */
-.video3-container {
-    width: 400px;
-    height: 225px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.video3-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-</style>
-
+  .video3-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  </style>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -182,53 +154,6 @@ An adaptive robust control scheme was also developed to handle uncertainties in 
     </tr>
 
 </table>
-
-<table class="video-table">
-    <tr>
-        <td>
-            <video width="400" height="225" controls>
-                <source src="Images/drone_proj/Experimental_setup.mp4" type="video/mp4">
-            </video>
-        </td>
-
-        <td>
-            <video width="400" height="225" controls>
-                <source src="Images/drone_proj/ros_gazibo_sim.mp4" type="video/mp4">
-            </video>
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="2" style="text-align: center;">
-            <video width="400" height="225" controls>
-                <source src="Images/drone_proj/simulation.mp4" type="video/mp4">
-            </video>
-        </td>
-    </tr>
-</table>
-
-<h2>Experimental Setup</h2>
-<div class="video-container1">
-    <video controls>
-        <source src="Images/drone_proj/Experimental_setup.mp4" type="video/mp4">
-    </video>
-</div>
-
-<h2>ROS & Gazebo Simulation</h2>
-
-<div style="text-align: center;">
-    <video width="800" controls>
-        <source src="Images/drone_proj/ros_gazibo_sim.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
-
-<h2>MATLAB Simulation</h2>
-<div class="video-container2">
-    <video controls>
-        <source src="Images/drone_proj/simulation.mp4" type="video/mp4">
-    </video>
-</div>
 
 <script type="text/javascript">
 function toggleProjects() {
